@@ -2,6 +2,9 @@
 " 
 " za, o : 折畳を開く/閉じる
 " zA, O : 折畳を再帰的に開く/閉じる
+
+set nocompatible
+
 nnoremap o za
 nnoremap O zA
 
@@ -9,15 +12,22 @@ nnoremap O zA
 
 set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set backspace=indent,eol,start
-set shiftwidth=4
-set noexpandtab
+
+set hlsearch
+set incsearch
 
 set number
 syntax on
+
 set list
 set listchars=tab:»\ ,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+
+set noexpandtab
 set tabstop=4
-set softtabstop=0
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smartindent
 
 " }}}
 " プラグイン {{{
